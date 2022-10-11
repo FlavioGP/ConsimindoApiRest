@@ -28,6 +28,11 @@ export default createGlobalStyle`
     border: none;
     border-radius: 4px;
     font-weight: 700;
+    transition: all .3s;
+  }
+
+  button:hover{
+    filter: brightness(75%);
   }
 
   a {
