@@ -20,3 +20,30 @@ export function loginFailure(payload){
     payload,
   }
 }
+
+export function resgisterRequest(payload){
+  return {
+    type: types.REGISTER_REQUEST,
+    payload,
+  }
+}
+
+export function registerUpdatedSuccess(payload){
+  return {
+    type: types.REGISTER_UPDATED_SUCCESS,
+    payload,
+  }
+}
+export function registerCreatedSuccess(payload){
+  return {
+    type: types.REGISTER_CREATED_SUCCESS,
+    payload,
+  }
+}
+
+export function resgisterFailure(payload){
+  return {
+    type: types.REGISTER_FAILURE,
+    payload,
+  }
+}
