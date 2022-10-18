@@ -10,6 +10,7 @@ import axios from '../../services/axios';
 import Loading from '../../components/Loading';
 
 export default function Alunos(){
+
   const [alunos, setAlunos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -22,6 +23,7 @@ export default function Alunos(){
     }
     getData();
   }, []);
+
 
   return(
     <Container>
