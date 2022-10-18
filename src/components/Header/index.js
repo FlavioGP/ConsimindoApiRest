@@ -14,7 +14,7 @@ export default function Header(){
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(actions.loginFailure());
-    history.push('/');
+    history.push('/login');
   }
 
   return(
