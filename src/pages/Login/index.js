@@ -35,7 +35,7 @@ export default function Login(props){
       toast.error('Senha invalida.');
     }
 
-    if(formErrors) console.log(formErrors);
+    if(formErrors) return;
 
     dispatch(actions.loginRequest({ email, password, prevPath}));
 
