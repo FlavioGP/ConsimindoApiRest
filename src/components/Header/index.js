@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaUserAlt, FaSignInAlt, FaCircle, FaPowerOff } from 'react-icons/fa'
+import { FaHome, FaUserAlt, FaSignInAlt, FaPowerOff } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -36,7 +36,6 @@ export default function Header(){
         </ Link>
       )}
 
-      { isLoggedIn && < FaCircle size={24} color="#6f3" />}
     </ Nav>
   )
 }

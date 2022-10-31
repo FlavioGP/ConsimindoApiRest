@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
 
+import Exclude from '../../components/Exclude';
 import Loading from '../../components/Loading';
 import * as actions from '../../store/modules/auth/actions';
 
@@ -55,11 +56,14 @@ export default function Register(){
 
   }
 
+
   return(
     <Container>
       <Loading isLoading={isLoading} />
 
       <h1>{id ? 'Editar usuario' : 'Crie sua conta'}</h1>
+
+      {id && <Exclude />}
 
       <Form onSubmit={handleSubmit}>
         <label htmlFor="nome">
